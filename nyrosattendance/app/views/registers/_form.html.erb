@@ -1,0 +1,26 @@
+<%= form_for(@register) do |f| %>
+  
+  <div class="field">
+    <%= f.label :e_id %><br />
+    <%= f.text_field :e_id %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :present %><br />
+    <%= f.text_field :present %>
+  </div>
+  <div class="field">
+    <%= f.label :late %><br />
+    <%= f.text_field :late %>
+  </div>
+  <div class="field">
+    <%= f.label :absent %><br />
+    <%= f.text_field :absent %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+
+<%= form_for([@employee, @employee.departments.build]) do |f| %>
+  <table>
+<tr>
+    <td><%= f.label :departmentname %></td>
+    <td><%= f.text_field :departmentname %></td>
+ </tr>
+<tr>
+    <td><div class="actions"></td>
+    <td><%= f.submit %></td>
+  </tr>
+</table>
+<% end %>

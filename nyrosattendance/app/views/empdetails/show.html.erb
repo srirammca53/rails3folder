@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @empdetail.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @empdetail.name %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @empdetail.department %>
+</p>
+<p> attendance</p>
+<%= render :partial => "registers/reigster",
+           :member => @empdetail.registers %>
+ 
+
+<p>attendance</p>
+<%= render "registers/form" %>
+ 
+
+
+<%= link_to 'Edit', edit_empdetail_path(@empdetail) %> |
+<%= link_to 'Back', empdetails_path %>
